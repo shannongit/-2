@@ -161,16 +161,12 @@
 
             //监听提交
             form.on('submit(login_btn)', function (data) {
-					var username = document.getElementById("user").value
-					var password = document.getElementById("pass").value
-					var d= new Date();
-					d.setHours(d.getHours() + (1));
-					document.cookie ="username="+username+";expires="+d.toGMTString();
+
 					layer.msg("登录成功",{icon:1})
 					
 					setTimeout(function(){
 					
-					　　window.location.href="index.html";  //可以是一句或是很多句代码，也可以是个函数
+					　　window.location.href="main.html";  //可以是一句或是很多句代码，也可以是个函数
 					
 					　　},3000);　
              /*   var jsonstr = { "username": data.field.username, "password": data.field.password };
