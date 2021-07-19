@@ -142,15 +142,13 @@
             //     	}
             //     }
              //    , pass: [/^[\S]{6,12}$/, '密码必须6到12位，且不能出现空格']
-                vercodes: function (value) {
-                    //获取验证码
-                    var zylVerCode = $(".zylVerCode").html();
-                    var v=value.upper;
-                    var z=zylVerCode.upper;
-                    if (v != z) {
-                        return '验证码错误（不区分大小写）';
-                    }
-                }
+					vercodes: function (value) {
+						//获取验证码
+						var zylVerCode = $(".zylVerCode").html();
+						if (value != zylVerCode) {
+							return '验证码错误（区分大小写）';
+						}
+					}
                 //页面发送请求跳转
                 , content: function (value) {
                     layedit.sync(editIndex);
