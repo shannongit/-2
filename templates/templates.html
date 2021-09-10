@@ -1,66 +1,124 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>稻草人-水稻病虫害防治系统-模板</title>
-  <meta name="renderer" content="webkit|ie-comp|ie-stand">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
-  <meta http-equiv="Cache-Control" content="no-siteapp" />
+	<head>
+		<meta charset="UTF-8">
+		<title>稻草人-水稻病虫害防治系统-模板</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!-- 自定义目录下css -->
+		<link rel="stylesheet" href="../static/css/font.css">
+		<link rel="stylesheet" href="../static/css/xadmin.css">
+		<link rel="stylesheet" href="../static/css/main.css">
+		<link rel="stylesheet" href="../static/css/xadmin.css">
+		<!-- layui css -->
+		<link rel="stylesheet" href="../static/lib/layui/css/layui.css">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="../static/css/font.css">
-  <link rel="stylesheet" href="../static/css/xadmin.css">
-  <link rel="stylesheet" href="../static/lib/layuiadmin/layui/css/layui.css" media="all">
-  <link rel="stylesheet" href="../static/lib/layuiadmin/layui/css/admin.css" media="all">
-  
-  <link rel="stylesheet" href="../static/lib/layuiadmin/lib/layui/css/layui.css" media="all">
-  <link rel="stylesheet" href="../static/lib/layuiadmin/style/admin.css" media="all">
-  <script src="../static/lib/layui/layui.js"></script>
-  
-  
-  
-  <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-  <script src="../static/lib/layui/layui.js" charset="utf-8"></script>
-  <script type="text/javascript" src="../static/js/xadmin.js"></script>
-
-</head>
-<body>
-
-<ul class="layui-nav" lay-filter="">
-  <li class="layui-nav-item"><img src="../static/images/four.png"  class="head-img" /> </li>
-  <li class="layui-nav-item layui-this"><a href="welcome.html">系统首页</a></li>
-  <li class="layui-nav-item"><a href="">虫害百科</a></li>
-  <li class="layui-nav-item"><a href="">虫害预警</a></li>
-  <li class="layui-nav-item">
-    <a href="javascript:;">用户主页</a>
-    <dl class="layui-nav-child"> <!-- 二级菜单 -->
-      <dd><a href="">用户信息</a></dd>
-      <dd><a href="">搜索记录</a></dd>
-      <dd><a href="">退出登录</a></dd>
-    </dl>
-  </li>
-  <li class="layui-nav-item"><a href="">用户反馈</a></li>
-</ul>
-<!-- 顶部结束 -->
+		<!-- layui admin css -->
+		<link rel="stylesheet" href="../static/lib/layuiadmin/lib/layui/css/layui.css" media="all">
+		<link rel="stylesheet" href="../static/lib/layuiadmin/lib/layui/css/admin.css" media="all">
+		<!-- <link rel="stylesheet" href="../static/lib/layuiadmin/lib/layui/css/layui_old.css" media="all"> -->
+		<link rel="stylesheet" href="../static/lib/layuiadmin/style/admin.css" media="all">
 
 
+		<!-- 引用的js -->
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../static/lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../static/js/xadmin.js"></script>
 
-<!-- 中部开始 -->
+		<!-- css of bootstrap 不需要就别乱引用,会导致出错-->
 
-
-
-
-<!-- 中部结束 -->
-<!-- 底部开始 -->
-<div class="footer">
-  <div class="copyright">Copyright ©2021 蜜雪冰城项目组 v2.3 All Rights Reserved</div>
-</div>
-<!-- 底部结束 -->
-<script>
-
+				<!-- <link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet"> -->
+		<!-- <script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script> -->
+		<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+		<script>
+			L2Dwidget.init({
+        "model": {　　　　　　　//jsonpath控制显示那个小萝莉模型，下面这个就是我觉得最可爱的小萝莉模型
+            jsonPath: "https://unpkg.com/live2d-widget-model-chitose@1.0.5/assets/chitose.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right", //看板娘的表现位置
+            "width": 150,  //小萝莉的宽度
+            "height": 300, //小萝莉的高度
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
 </script>
-</body>
+	</head>
+	<body>
+
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item"><img src="../static/images/four.png" class="head-img" /> </li>
+			<li class="layui-nav-item"><a href="main.html">系统首页</a></li>
+			<li class="layui-nav-item"><a href="pest_dict.html">虫害百科</a></li>
+			<li class="layui-nav-item"><a href="pest_warn.html">虫害预警</a></li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">用户主页</a>
+				<dl class="layui-nav-child">
+					<!-- 二级菜单 -->
+					<dd><a href="user_center.html">用户信息</a></dd>
+					<dd><a href="">搜索记录</a></dd>
+					<dd><a href="index.html">退出登录</a></dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item"><a href="user_comments.html">用户反馈</a></li>
+		</ul>
+		<!-- 顶部结束 -->
+
+
+
+		<!-- 中部开始 -->
+
+
+
+		<div >
+			<table style="margin-left: 100px; margin-top: 80px;    line-height: 40px">
+				<tbody class="panel panel-default" >
+					<tr align="center">
+						<td width="90">
+							<div><img src="https://z3.ax1x.com/2021/07/23/WrehXn.jpg" width="150px" style="margin: 20px;"></div>
+						</td>
+						<td width="10"> </td>
+						<td align="left">
+							<ul>
+								<li><strong style="font-size: 20px;">稻飞虱</strong></li>
+								<li  style="font-size: 14px;">传播植物病毒病。以刺吸植株汁液危害水稻等作物。</li>
+								<li><span>主要活跃地:</span><span>华南稻区、长江中下游稻区、西南稻区、黄淮稻区</span></li>
+								<li>
+									<span>主要活跃时间:</span><span>9月上、中旬</span>
+								</li>
+							</ul>
+						</td>
+						<td width="10"> </td>
+						<td width="100">
+						</td>
+						<!-- <hr class="layui-border-black"> -->
+					</tr>
+						<hr class="layui-border-black">
+				</tbody>
+			</table>
+		</div>
+
+
+		<!-- 中部结束 -->
+		<!-- 底部开始 -->
+		<div class="footer">
+			<div class="copyright">Copyright ©2021 蜜雪冰城项目组 v2.3 All Rights Reserved</div>
+		</div>
+		<!-- 底部结束 -->
+		<script>
+
+		</script>
+	</body>
 </html>

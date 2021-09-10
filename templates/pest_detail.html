@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>稻草人-水稻病虫害防治系统-模板</title>
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<!-- 自定义目录下css -->
+		<link rel="stylesheet" href="../static/css/font.css">
+		<link rel="stylesheet" href="../static/css/xadmin.css">
+		<link rel="stylesheet" href="../static/css/main.css">
+		<link rel="stylesheet" href="../static/css/style.css">
+		<link rel="stylesheet" href="../static/css/xadmin.css">
+		<!-- layui css -->
+		<link rel="stylesheet" href="../static/lib/layui/css/layui.css">
+
+		<!-- layui admin css -->
+		<link rel="stylesheet" href="../static/lib/layuiadmin/lib/layui/css/layui.css" media="all">
+		<link rel="stylesheet" href="../static/lib/layuiadmin/lib/layui/css/admin.css" media="all">
+		<!-- <link rel="stylesheet" href="../static/lib/layuiadmin/lib/layui/css/layui_old.css" media="all"> -->
+		<link rel="stylesheet" href="../static/lib/layuiadmin/style/admin.css" media="all">
+
+
+		<!-- 引用的js -->
+		<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script src="../static/lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../static/js/xadmin.js"></script>
+		<script type="text/javascript" src="../static/js/nav.js"></script>
+
+		<!-- css of bootstrap 不需要就别乱引用,会导致出错-->
+
+		<link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+		<script src="https://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+
+
+	</head>
+	<body>
+
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item"><img src="../static/images/four.png" class="head-img" /> </li>
+			<li class="layui-nav-item"><a href="main.html">系统首页</a></li>
+			<li class="layui-nav-item layui-this"><a href="pest_dict.html">虫害百科</a></li>
+			<li class="layui-nav-item"><a href="pest_warn.html">虫害预警</a></li>
+			<li class="layui-nav-item">
+				<a href="javascript:;">用户主页</a>
+				<dl class="layui-nav-child">
+					<!-- 二级菜单 -->
+					<dd><a href="user_center.html">用户信息</a></dd>
+					<dd><a href="">搜索记录</a></dd>
+					<dd><a href="index.html">退出登录</a></dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item"><a href="user_comments.html">用户反馈</a></li>
+		</ul>
+		<!-- 顶部结束 -->
+
+
+
+		<!-- 中部开始 -->
+
+		<div id="ksLeftNav">
+			<div id="nav-con">
+				<div class="circle-top"><img src="images/big_quan.png"></div>
+				<div class="line"></div>
+				<div class="circle-bottom"><img src="images/big_quan.png"></div>
+				<ul class="nav" id="list">
+					<li>
+						<a href="#item1" class="nav-title">1 形态特征</a>
+						<div class="nav-detail">
+							<a href="#item11">1.1 基本介绍</a>
+							<a href="#item12">1.2 地理分布</a>
+						</div>
+					</li>
+					<li>
+						<a href="#item2" class="nav-title">2 主要危害</a>
+						<div class="nav-detail">
+							<a href="#item21">2.1 基本情形</a>
+						</div>
+					</li>
+					<li>
+						<a href="#item3" class="nav-title">3 防治要点</a>
+						<div class="nav-detail">
+							<a href="#item31">3.1 农业防治</a>
+							<a href="#item32">3.2 生物防治</a>
+						</div>
+					</li>
+					<li>
+						<a href="#item4" class="nav-title">4 用户留言</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="layui-row">
+			<div class="layui-col-md3 layui-col-md-offset3 ">
+				<div class="grid-demo grid-demo-bg1" style="margin-top: 80px;">
+					<h2 class="header_baike"> 稻飞虱</h2>
+				</div>
+				<div class="grid-demo grid-demo-bg1">
+					<h5> 学名：Nilaparvata lugens Stal</h5>
+				</div>
+			</div>
+			<div class="layui-col-md3 layui-col-md-offset1">
+				<div class="grid-demo layui-panel"><img src="../static/images/luo.jpg" class="intro-img"></div>
+			</div>
+		</div>
+
+
+		<div class="right-con">
+			<div class="item" id="item1">
+				<h5>形态特征</h5>
+				<div id="item11">
+					<h3>基本介绍</h4>
+						<div>
+							稻飞虱，属于同翅目(Homoptera)飞虱科(Delphacidae)，俗称蠓子虫、火蠓虫、响虫。以刺吸植株汁液危害水稻等作物。我国为害水稻的飞虱主要有三种：褐飞虱 (Nilaparvata lugens
+							Stal)、白背飞虱 (Sogatella furcifera (Horvath)) 和灰飞虱 (Laodelphax striatellus Fallén)，其中以褐飞虱发生和为害最重，白背飞虱次之。
+						</div>
+				</div>
+				<div id="item12">
+					<h3>地理分布</h3>
+					<div>
+						3种飞虱在我国各省、自治区均有发生。
+						褐飞虱：为偏南方种类，在长江流域及其以南地区为害严重。
+						白背飞虱：为广跨偏南方的种类，为害性仅次于褐飞虱。
+						灰飞虱：为广跨偏北种类。
+					</div>
+				</div>
+				<div class="item" id="item2">
+					<h5>主要危害</h5>
+					<div id="item21">
+						<h3>基本情形</h3>
+						<div>
+
+						</div>
+
+					</div>
+					<!--        <div id="item22">
+          <h3>特色功能</h3>
+			<p>是百度百科与地方政府企业百科词条页企业百科词条页共建“城市百科”中的一个落地项目，每个城市根据自身情况，在各自的城市百科中涵盖包括历史、文化、旅游、人物、美食、建设等多方面内容，政府还可通过百度城市百科发布城市热点新闻和资讯信息。一方面，网友足不出户即可了解到最全面最及时的城市信息；另一方面，由于所有的内容均经由政府认证，保证了城市百科内容的权威性和准确度，用户只需在百度搜索查询具体的城市百科名称，就能看到该城市的网络名片页面</p>
+        </div>
+        <div id="item23">
+          <h3>用户功能</h3>
+			<p>在该系统中，活动的发起、参与编辑、词条评审（百科任务评审团成员负责）等全由科友负责，任务自主性更高，科友可组队完成，同时根据任务难易度不同，还可获得财富值奖励及实物奖励。</p>
+        </div> -->
+				</div>
+				<div class="item" id="item3">
+					<h5>防治要点</h5>
+					<div id="item31">
+						<h3>农业防治</h3>
+					</div>
+					<div id="item32">
+						<h3>生物防治</h3>
+					</div>
+				</div>
+				<div class="item" id="item4">
+					<h5>用户留言</h5>
+				</div>
+			</div>
+
+
+
+			<!-- 中部结束 -->
+			<!-- 底部开始 -->
+
+			<!-- 底部结束 -->
+			<script>
+
+			</script>
+	</body>
+</html>
